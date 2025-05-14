@@ -1,7 +1,3 @@
-/*
-README.md (modelo básico)
-*/
-
 # Sistema CRUD de Contas Contábeis
 
 Este projeto tem como objetivo criar um sistema CRUD simples e funcional para cadastro de contas contábeis, utilizando Java Spring Boot no backend e React no frontend, com PostgreSQL como banco de dados. A aplicação permite criar, visualizar, editar e deletar contas contábeis com os seguintes dados:
@@ -14,7 +10,7 @@ Este projeto tem como objetivo criar um sistema CRUD simples e funcional para ca
 ## Tecnologias Utilizadas
 
 ### Backend
-- Java 17
+- Java 21
 - Spring Boot
 - JPA/Hibernate
 - PostgreSQL
@@ -23,7 +19,6 @@ Este projeto tem como objetivo criar um sistema CRUD simples e funcional para ca
 - React
 - Ant Design (UI)
 - Axios (requisições HTTP)
-- ECharts (visualização de dados - opcional)
 
 ### Infraestrutura
 - Docker
@@ -38,8 +33,8 @@ Este projeto tem como objetivo criar um sistema CRUD simples e funcional para ca
 ### Passos
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
-cd nome-do-projeto
+git clone https://github.com/seu-usuario/contas_crud_projeto.git
+cd contas_crud_projeto
 ```
 
 2. Inicie os containers:
@@ -48,10 +43,10 @@ docker-compose up --build
 ```
 
 3. Acesse a aplicação:
-- Frontend: `http://localhost:3000`
+- Frontend: `http://localhost:4173`
 - Backend (Swagger ou API): `http://localhost:8080/swagger-ui.html`
 
-### Endpoints API (exemplo)
+### Endpoints API
 - `GET /contas` - Listar contas
 - `POST /contas` - Criar nova conta
 - `PUT /contas/{id}` - Atualizar conta
@@ -61,7 +56,7 @@ docker-compose up --build
 
 ```
 /backend
-  └── src/main/java/com/suaempresa/contas
+  └── src/main/java/com/synchro/contas
   └── ...
 /frontend
   └── src/
@@ -72,5 +67,5 @@ docker-compose up --build
 ```
 
 ## Funcionalidades Adicionais (Opcional)
-- Geração de relatório `.txt` com a listagem de contas
-- Filtros e ordenação por natureza ou valor
+- Geração de relatório `.xlsx` com a listagem de contas
+- Filtros por natureza ou valor
